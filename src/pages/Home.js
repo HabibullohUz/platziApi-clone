@@ -6,12 +6,12 @@ import Users from './Users'
 
 function Home() {
   return (
-    <div className='container'>
+    <>
       <Header />
       <Products />
       <Categories />
       <Users />
-    </div>
+    </>
   )
 }
 
