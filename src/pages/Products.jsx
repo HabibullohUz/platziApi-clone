@@ -10,9 +10,7 @@ function Products() {
       .then((res) => {
         setProducts(res.data);
       })
-      .catch((error) => {
-        console.log(error);
-      });
+      .catch((error) => {});
   }, []);
 
   return (

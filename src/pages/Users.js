@@ -4,7 +4,6 @@ import React, { useEffect } from 'react'
 function Users() {
 
   const [users, setUsers] = React.useState([])
-  console.log(users);
 
   useEffect(() => {
     axios

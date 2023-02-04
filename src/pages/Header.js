@@ -1,6 +1,16 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 function Header() {
+
+  let navigation = useNavigate()
+  const handleClick = (e) => {
+    e.preventDefault()
+    navigation('/introduction')
+  }
+
+
+
   return (
     <>
       <div className="header">
@@ -15,7 +25,7 @@ function Header() {
             <p className='header-p'>
               Fake store rest API for your e-commerce or shopping website prototype.
             </p>
-            <button className='header-btn'><a href="1">VIEW DOCS</a></button>
+            <button className='header-btn'><a href="1" onClick={handleClick}>VIEW DOCS</a></button>
           </div>
           <div className="header-right">
             <img className='header-img' src="https://fakeapi.platzi.com/fake-api.png" alt="" />

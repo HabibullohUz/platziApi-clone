@@ -4,7 +4,6 @@ import React, { useEffect } from 'react'
 function Categories() {
 
   const [categories, setCategories] = React.useState([])
-  console.log(categories);
 
   useEffect(() => {
     axios
